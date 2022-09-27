@@ -33,7 +33,7 @@ public class LocacaoController {
     @GetMapping("getByID/{id}")
     public ResponseEntity<?> getByID(@PathVariable(value = "id") int id) throws Exception {
 
-        Object obj = locacaoService.getById(id);
+        Object obj = locacaoService.getById(id);// AQUI BUGOU
         return ResponseEntity.ok().body(obj);
     }
 }
