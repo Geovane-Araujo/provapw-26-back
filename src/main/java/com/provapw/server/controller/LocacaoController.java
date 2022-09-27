@@ -1,8 +1,6 @@
 package com.provapw.server.controller;
 
-import com.provapw.server.model.Item;
 import com.provapw.server.model.Locacao;
-import com.provapw.server.service.ItensService;
 import com.provapw.server.service.LocacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
