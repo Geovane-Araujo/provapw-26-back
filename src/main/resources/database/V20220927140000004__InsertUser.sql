@@ -1,0 +1,1 @@
+INSERT into usuario(nome,email,senha) values('Geovane', 'geovnae@email.com','123');

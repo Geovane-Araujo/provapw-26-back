@@ -1,0 +1,9 @@
+CREATE DATABASE server-loc;
+
+CREATE TABLE IF NOT EXISTS schema_version(
+
+    id serial primary key,
+    description varchar(300),
+    fileName varchar(300),
+    dataexecution TIMESTAMP
+);

@@ -1,0 +1,1 @@
+alter table locacao_item add column idlocacao int;
