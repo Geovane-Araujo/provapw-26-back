@@ -37,5 +37,5 @@ create table if not exists usuario(
    senha varchar(50)
 );
 
-alter table locacao_item add constraint fk_locacao_item__item foreign key (id_item) references item(id);
+alter table locacao_item add constraint fk_locacao_item__item foreign key (iditem) references item(id);
 alter table locacao add constraint fk_locacao__cliente foreign key (id_cliente) references cliente(id);

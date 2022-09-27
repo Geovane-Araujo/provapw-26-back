@@ -16,7 +16,6 @@ public class Interceptor implements HandlerInterceptor {
 
         if(request.getRequestURI().equals("/authentication/login")){
 
-
         } else {
             String token = request.getHeader("Authorization");
             token = token.split(" ")[1];
@@ -28,11 +27,8 @@ public class Interceptor implements HandlerInterceptor {
                 }
 
             }
-            response.sendError(401);
-            return false;
-
         }
-        return false;
+        return true;
     }
 
     private boolean validateToken(String token) {
