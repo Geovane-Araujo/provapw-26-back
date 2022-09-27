@@ -18,8 +18,8 @@ public class Interceptor implements HandlerInterceptor {
 
         } else {
             String token = request.getHeader("Authorization");
-            token = token.split(" ")[1];
             if(token != null){
+                token = token.split(" ")[1];
                 boolean validate = validateToken(token);
                 if(!validate){
                     response.sendError(401);
